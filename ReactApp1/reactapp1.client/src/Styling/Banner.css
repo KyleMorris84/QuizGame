@@ -1,0 +1,44 @@
+header {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.banner {
+    background-color: #4c7c8c;
+    color: #ecf4ff;
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: row; /* Horizontal layout with two columns */
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .icon {
+    flex: 0 0 auto; /* Icon doesn't stretch */
+}
+
+.banner .icon img {
+    width: 100px;
+    height: auto;
+}
+
+.banner .text {
+    width: 100%;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.banner h1 {
+    font-size: 44pt;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+}

@@ -1,0 +1,75 @@
+.quiz {
+    display: flex;
+    gap: 20px;
+}
+
+#question-container {
+    width: 70%;
+    background-color: #ffe07d;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+
+#score {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.good-score
+{
+    border: 2px solid green;
+    color: green;
+}
+
+.ok-score
+{
+    border: 2px solid rgb(232, 127, 0);
+    color: rgb(232, 127, 0);
+}
+
+.bad-score
+{
+    border: 2px solid red;
+    color: red;
+}
+
+#score-container {
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    margin-top: 40px;
+    text-align: right;
+}
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#okbtn {
+    margin-top: 20px;
+    align-self: center;
+}
+
+h1 {
+    font-size: 50pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    padding-bottom: 20px;
+}
+
+.prev-next-buttons {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}

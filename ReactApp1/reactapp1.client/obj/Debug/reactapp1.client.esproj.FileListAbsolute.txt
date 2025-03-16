@@ -1,0 +1,2 @@
+C:\Users\kylem\Documents\Projects\C#\ReactApp1\reactapp1.client\obj\Debug\reactapp1.client.esproj.CoreCompileInputs.cache
+C:\Users\kylem\Documents\Projects\CSharp\ReactApp1\reactapp1.client\obj\Debug\reactapp1.client.esproj.CoreCompileInputs.cache

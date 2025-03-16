@@ -1,0 +1,58 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\2796f2af-de54-437e-9171-fe66e69f34e2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ReactApp1.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ReactApp1.Server</BasePath>
+      <RelativePath>uploads/2796f2af-de54-437e-9171-fe66e69f34e2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ndwty7na84</Fingerprint>
+      <Integrity>1ejXUOfZt+GVNb+VwbNpWimB09SAR6Vz3BPb7PWJ5dU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\2796f2af-de54-437e-9171-fe66e69f34e2.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\405bd40d-9edf-4e5b-ad9f-7c4fef5c5e9b.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ReactApp1.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ReactApp1.Server</BasePath>
+      <RelativePath>uploads/405bd40d-9edf-4e5b-ad9f-7c4fef5c5e9b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ndwty7na84</Fingerprint>
+      <Integrity>1ejXUOfZt+GVNb+VwbNpWimB09SAR6Vz3BPb7PWJ5dU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\405bd40d-9edf-4e5b-ad9f-7c4fef5c5e9b.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\d731cfc3-bf72-4a2e-888f-7e22aaf192ce.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ReactApp1.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ReactApp1.Server</BasePath>
+      <RelativePath>uploads/d731cfc3-bf72-4a2e-888f-7e22aaf192ce.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rsc6ic5coc</Fingerprint>
+      <Integrity>S9h/xGuA/qFZnpva+1lod26VvVxFGwyutKgohK7NhFk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\d731cfc3-bf72-4a2e-888f-7e22aaf192ce.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

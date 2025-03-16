@@ -1,0 +1,16 @@
+#quiz {
+    width: 70%;
+    background-color: #ffe07d;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#startButton {
+    margin-top: 10px;
+}
