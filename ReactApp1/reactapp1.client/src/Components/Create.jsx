@@ -32,7 +32,6 @@ export default function Create(props) {
                 })
             })
         })
-        window.location.reload()
     }
 
     async function loadData() {
