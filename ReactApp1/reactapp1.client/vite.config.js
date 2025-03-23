@@ -14,6 +14,7 @@ const certFilePath = path.join(baseFolder, `${certificateName}.pem`);
 const keyFilePath = path.join(baseFolder, `${certificateName}.key`);
 
 // Only try to create a certificate if NOT on Vercel
+var target = ""
 if (!isVercel) {
     if (!fs.existsSync(baseFolder)) {
         fs.mkdirSync(baseFolder, { recursive: true });
@@ -32,14 +33,14 @@ if (!isVercel) {
             throw new Error("Could not create certificate.");
         }
     }
-    const target = env.ASPNETCORE_HTTPS_PORT
+    target = env.ASPNETCORE_HTTPS_PORT
         ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}`
         : env.ASPNETCORE_URLS
             ? env.ASPNETCORE_URLS.split(';')[0]
             : 'https://localhost:7070';
     
 } else {
-    const target = "https://quizgameserver20250322155036.azurewebsites.net"
+    target = "https://quizgameserver20250322155036.azurewebsites.net"
 }
 
 // Vercel does not need HTTPS configuration
