@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../Styling/Quiz.css'
+import { API_BASE_URL } from "../../config.js";
 
 export default function Quiz(props) {
 
@@ -10,7 +11,7 @@ export default function Quiz(props) {
     const [answers, setAnswers] = useState([]);
 
     async function loadQuestions() {
-        const response = await fetch(`api/questions?quizId=${props.quiz.id}`)
+        const response = await fetch(`${API_BASE_URL}/api/questions?quizId=${props.quiz.id}`)
         if (response.ok) {
             const data = await response.json();
             setQuestions(data);

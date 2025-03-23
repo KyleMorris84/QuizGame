@@ -1,6 +1,7 @@
 import '../Styling/Create.css'
 import '../Styling/StartButton.css'
 import { useState, useEffect } from 'react'
+import { API_BASE_URL } from "../../config.js";
 
 export default function Create(props) {
 
@@ -20,7 +21,7 @@ export default function Create(props) {
 
         console.log("submitting!")
 
-        const submitQuizData = await fetch("api/quizdata", {
+        const submitQuizData = await fetch(`${API_BASE_URL}/api/quizdata`, {
             method: "POST",
             body: JSON.stringify({ ...quizData, 
                 genre: { ...quizData.genre, id: (quizData.genre.id == "new_genre" ? null : parseInt(quizData.genre.id)) },
@@ -38,7 +39,7 @@ export default function Create(props) {
     }
 
     async function loadData() {
-        const genreResponse = await fetch("api/genres")
+        const genreResponse = await fetch(`${API_BASE_URL}/api/genres`)
         if (genreResponse.ok) {
             const data = await genreResponse.json();
             setGenres(data);

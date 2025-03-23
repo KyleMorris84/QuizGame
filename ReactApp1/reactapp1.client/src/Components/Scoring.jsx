@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import '../Styling/Quiz.css'
 import '../Styling/StartButton.css'
+import { API_BASE_URL } from "../../config.js";
 
 export default function Scoring(props) {
 
     const [questions, setQuestions] = useState([]);
 
     async function loadQuestions() {
-        const response = await fetch(`api/questions?quizId=${props.quiz.id}`)
+        const response = await fetch(`${API_BASE_URL}/api/questions?quizId=${props.quiz.id}`)
         if (response.ok) {
             const data = await response.json();
             setQuestions(data);
