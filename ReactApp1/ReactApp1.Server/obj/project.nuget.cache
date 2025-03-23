@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "diJXECmugg8=",
+  "dgSpecHash": "2UT2WNL2ExM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
+  "projectFilePath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\QuizGame.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kylem\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\kylem\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.12\\microsoft.aspnetcore.spaproxy.8.0.12.nupkg.sha512",
+    "C:\\Users\\kylem\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.14\\microsoft.aspnetcore.spaproxy.8.0.14.nupkg.sha512",
     "C:\\Users\\kylem\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\kylem\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\kylem\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

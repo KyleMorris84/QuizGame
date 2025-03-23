@@ -15,7 +15,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SpaProxy/8.0.12": {
+      "Microsoft.AspNetCore.SpaProxy/8.0.14": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SpaProxy.dll": {}
@@ -1187,10 +1187,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.SpaProxy/8.0.12": {
-      "sha512": "3FCqH7rdZVENLCSbBwiX9K034j5fUbqh8qk14Etj4pROGZGqH/nzlFZ+LdT/S2MtpWJSOUJLTT72Xk/Jf6+UVw==",
+    "Microsoft.AspNetCore.SpaProxy/8.0.14": {
+      "sha512": "pkiYeNCNjZjSU5PVD6zlYSuDMCKNRHvhVF3O8pw6rPNNG7khKq8fIRbz/ROCLaiLTHVeOiNfsn8TSVYP0NIboA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.spaproxy/8.0.12",
+      "path": "microsoft.aspnetcore.spaproxy/8.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1198,7 +1198,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "build/Microsoft.AspNetCore.SpaProxy.targets",
         "lib/net8.0/Microsoft.AspNetCore.SpaProxy.dll",
-        "microsoft.aspnetcore.spaproxy.8.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.spaproxy.8.0.14.nupkg.sha512",
         "microsoft.aspnetcore.spaproxy.nuspec"
       ]
     },
@@ -3093,11 +3093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
-      "projectName": "ReactApp1.Server",
-      "projectPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
+      "projectUniqueName": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\QuizGame.Server.csproj",
+      "projectName": "QuizGame.Server",
+      "projectPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\QuizGame.Server.csproj",
       "packagesPath": "C:\\Users\\kylem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\obj\\",
+      "outputPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

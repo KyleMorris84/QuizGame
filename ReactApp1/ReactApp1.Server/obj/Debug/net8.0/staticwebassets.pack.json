@@ -1,36 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\wwwroot\\uploads\\2796f2af-de54-437e-9171-fe66e69f34e2.png",
-      "PackagePath": "staticwebassets\\uploads\\2796f2af-de54-437e-9171-fe66e69f34e2.png"
+      "Id": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\AppData\\quiz-db.db",
+      "PackagePath": "staticwebassets\\AppData\\quiz-db.db"
     },
     {
-      "Id": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\wwwroot\\uploads\\405bd40d-9edf-4e5b-ad9f-7c4fef5c5e9b.png",
-      "PackagePath": "staticwebassets\\uploads\\405bd40d-9edf-4e5b-ad9f-7c4fef5c5e9b.png"
-    },
-    {
-      "Id": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\wwwroot\\uploads\\d731cfc3-bf72-4a2e-888f-7e22aaf192ce.png",
-      "PackagePath": "staticwebassets\\uploads\\d731cfc3-bf72-4a2e-888f-7e22aaf192ce.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReactApp1.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuizGame.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReactApp1.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuizGame.Server.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ReactApp1.Server.props",
-      "PackagePath": "build\\ReactApp1.Server.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.QuizGame.Server.props",
+      "PackagePath": "build\\QuizGame.Server.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ReactApp1.Server.props",
-      "PackagePath": "buildMultiTargeting\\ReactApp1.Server.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QuizGame.Server.props",
+      "PackagePath": "buildMultiTargeting\\QuizGame.Server.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ReactApp1.Server.props",
-      "PackagePath": "buildTransitive\\ReactApp1.Server.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.QuizGame.Server.props",
+      "PackagePath": "buildTransitive\\QuizGame.Server.props"
     }
   ],
   "ElementsToRemove": []

@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "ygt3om/vR1nYjwtGAa0xGt/L88A0MouQRAOEDHBG99k=",
-  "Source": "ReactApp1.Server",
-  "BasePath": "_content/ReactApp1.Server",
+  "Hash": "pB3G+Mh6MASbPDQ5XYOHMJ0TUQJatYSMksu8qWdCoMA=",
+  "Source": "QuizGame.Server",
+  "BasePath": "_content/QuizGame.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\reactapp1.client\\reactapp1.client.esproj",
+      "Identity": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\reactapp1.client\\QuizGame.Client.esproj",
       "Version": 2,
-      "Source": "reactapp1.client",
+      "Source": "QuizGame.Client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
@@ -20,13 +20,118 @@
   ],
   "DiscoveryPatterns": [
     {
-      "Name": "ReactApp1.Server\\wwwroot",
-      "Source": "ReactApp1.Server",
-      "ContentRoot": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\wwwroot\\",
-      "BasePath": "_content/ReactApp1.Server",
+      "Name": "QuizGame.Server\\wwwroot",
+      "Source": "QuizGame.Server",
+      "ContentRoot": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\",
+      "BasePath": "_content/QuizGame.Server",
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\AppData\\quiz-db.db",
+      "SourceId": "QuizGame.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\",
+      "BasePath": "_content/QuizGame.Server",
+      "RelativePath": "AppData/quiz-db#[.{fingerprint}]?.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bsbloucyo9",
+      "Integrity": "FUFFLfGvJ4uNkcywJMrTngRiCMcnMUluW2XfpjS4TIU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AppData\\quiz-db.db"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "AppData/quiz-db.bsbloucyo9.db",
+      "AssetFile": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\AppData\\quiz-db.db",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUFFLfGvJ4uNkcywJMrTngRiCMcnMUluW2XfpjS4TIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 11:02:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bsbloucyo9"
+        },
+        {
+          "Name": "label",
+          "Value": "AppData/quiz-db.db"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUFFLfGvJ4uNkcywJMrTngRiCMcnMUluW2XfpjS4TIU="
+        }
+      ]
+    },
+    {
+      "Route": "AppData/quiz-db.db",
+      "AssetFile": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\wwwroot\\AppData\\quiz-db.db",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "61440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUFFLfGvJ4uNkcywJMrTngRiCMcnMUluW2XfpjS4TIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 11:02:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUFFLfGvJ4uNkcywJMrTngRiCMcnMUluW2XfpjS4TIU="
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,8 @@
+.vs
+*.sln
+*.user
+
+*.db
+Properties
+obj
+bin

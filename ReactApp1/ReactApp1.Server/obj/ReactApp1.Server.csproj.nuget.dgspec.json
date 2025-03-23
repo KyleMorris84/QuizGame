@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj": {}
+    "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj": {
+    "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
+        "projectUniqueName": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
         "projectName": "ReactApp1.Server",
-        "projectPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
+        "projectPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\ReactApp1.Server.csproj",
         "packagesPath": "C:\\Users\\kylem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\ReactApp1\\ReactApp1.Server\\obj\\",
+        "outputPath": "C:\\Users\\kylem\\Documents\\Projects\\CSharp\\QuizGame\\ReactApp1\\ReactApp1.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

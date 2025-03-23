@@ -6,10 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var conString = builder.Configuration.GetConnectionString("DbPath") ??
-     throw new InvalidOperationException("Connection string 'DbPath'" +
-    " not found.");
-builder.Services.AddDbContext<QuizDbContext>(options => options.UseSqlite(conString));
+string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "AppData", "quiz-db.db");
+
+var connectionString = $"Data Source={dbPath}";
+
+Console.WriteLine(connectionString);
+
+builder.Services.AddDbContext<QuizDbContext>(options =>
+    options.UseSqlite(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
