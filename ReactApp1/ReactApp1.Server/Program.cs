@@ -2,7 +2,18 @@ using Microsoft.EntityFrameworkCore;
 using ReactApp1.Server.Models;
 using ReactApp1.Server.Models.Repositories;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("https://quiz-game-liard-delta.vercel.app/");
+                      });
+});
 
 // Add services to the container.
 
@@ -35,6 +46,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
