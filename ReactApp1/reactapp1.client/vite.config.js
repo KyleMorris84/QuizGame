@@ -43,7 +43,7 @@ export default defineConfig({
         },
     },
     define: {
-        'import.meta.env.API_URL': JSON.stringify(process.env.API),
+        'import.meta.env.API_URL': JSON.stringify(process.env.API_URL),
     },
     server: {
         port: 55026,
