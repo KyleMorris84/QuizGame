@@ -30,7 +30,10 @@ export default function Create(props) {
                         return({...o, id: null})
                     })})
                 })
-            })
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
     }
 
