@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("https://quiz-game-liard-delta.vercel.app/");
+                          policy.WithOrigins("https://quiz-game-liard-delta.vercel.app");
                       });
 });
 
