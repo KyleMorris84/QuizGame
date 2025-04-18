@@ -1,8 +1,7 @@
 # Kyle Morris Quiz Game
 
 This is my quiz game. Enjoy.
-
-![hello](https://d2h3d42vkj4fuu.cloudfront.net/57d27b59c7a35dc7405cd46ec5180448)
+Backend is hosted with Azure App Services. Frontend is hosted on Vercel and can be viewed [here](https://quiz-game-liard-delta.vercel.app/)
 
 ## How to run
 
