@@ -127,9 +127,9 @@ export default function Create() {
   return (
     <div className="min-h-screen bg-[#f8f7f4] text-gray-800 font-['Poppins',sans-serif] py-10 px-4">
       <div className="max-w-4xl w-200">
-        <h1 className="text-3xl text-center font-bold text-gray-700 mb-6">Make a Quiz</h1>
         
         <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-lg p-6">
+          <h1 className="text-3xl font-bold text-gray-700 mb-6">Make a Quiz</h1>
           {/* Quiz Details Section */}
           <div className="mb-8">
             <h2 className="text-xl font-semibold text-gray-700 mb-4">Quiz Details</h2>

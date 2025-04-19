@@ -42,10 +42,8 @@ export default function Select({ setCurrentPage, setGlobalQuiz }) {
     return (
         <div className="min-h-screen bg-[#f8f7f4] text-gray-800 font-['Poppins',sans-serif] py-10 px-4">
             <div className="max-w-4xl w-200 mx-auto">
-                <h1 className="text-3xl text-center font-bold text-gray-700 mb-6">Play a Quiz</h1>
-        
                 <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-lg p-6 mb-6">
-
+                    <h1 className="text-3xl font-bold text-gray-700 mb-6">Play a Quiz</h1>
                     <div className="mb-4">
                         <label htmlFor="genre" className="block text-gray-600 mb-2">Genre</label>
                         <select
