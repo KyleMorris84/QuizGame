@@ -1,10 +1,13 @@
-// CreateQuiz.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { API_BASE_URL } from "../../config.js";
 
 export default function Create() {
   const [quizTitle, setQuizTitle] = useState('');
   const [quizDescription, setQuizDescription] = useState('');
   const [quizGenre, setQuizGenre] = useState('');
+  const [genres, setGenres] = useState([]);
+  const [showNewGenre, setShowNewGenre] = useState(false)
+  const [newGenre, setNewGenre] = useState();
   const [questions, setQuestions] = useState([
     {
       id: 1,
@@ -17,16 +20,13 @@ export default function Create() {
     }
   ]);
 
-  const genres = [
-    'General Knowledge', 
-    'Science', 
-    'History', 
-    'Geography', 
-    'Entertainment', 
-    'Sports', 
-    'Literature', 
-    'Technology'
-  ];
+  async function loadGenres() {
+    const genreResponse = await fetch(`${API_BASE_URL}/api/genres`);
+    if (genreResponse.ok) {
+      const data = await genreResponse.json();
+      setGenres(data);
+    }
+  }
 
   const addQuestion = () => {
     const newQuestion = {
@@ -90,18 +90,39 @@ export default function Create() {
     setQuestions(updatedQuestions);
   };
 
-  const handleSubmit = (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    // Here you would typically send the quiz data to your backend
+
     const quizData = {
       title: quizTitle,
       description: quizDescription,
-      genre: quizGenre,
-      questions: questions
+      genre: showNewGenre ? {name: newGenre} : {id: parseInt(quizGenre)},
+      questions: questions.map(q => {
+        return({
+            title: q.title, 
+            answers: q.options.map(o => {
+                return({
+                    name: o.text,
+                    correct: o.isCorrect
+                })
+            })
+        })
+      })
     };
-    console.log('Quiz Data:', quizData);
-    // Add API call or state management here
+
+    await fetch(`${API_BASE_URL}/api/quizdata`, {
+        method: "POST",
+        body: JSON.stringify(quizData),
+        headers: {
+            "Content-Type": "application/json",
+        }
+    });
+
   };
+
+  useEffect(() => {
+    loadGenres();
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f8f7f4] text-gray-800 font-['Poppins',sans-serif] py-10 px-4">
@@ -138,20 +159,47 @@ export default function Create() {
             
             <div className="mb-4">
               <label htmlFor="genre" className="block text-gray-600 mb-2">Genre</label>
-              <select
-                id="genre"
-                value={quizGenre}
-                onChange={(e) => setQuizGenre(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              >
-                <option value="" disabled>Select a genre</option>
-                {genres.map((genre) => (
-                  <option key={genre} value={genre}>{genre}</option>
-                ))}
-              </select>
+              <div className="flex gap-5">
+                <select
+                    id="genre"
+                    value={showNewGenre ? "" : quizGenre}
+                    onChange={(e) => setQuizGenre(e.target.value)}
+                    className="disabled:bg-gray-100 disabled:text-gray-300 outline-1 outline-solid outline-gray-300 border-r-transparent border-r-8 w-full px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                    disabled={showNewGenre}
+                >
+                    <option value="" disabled>Select a genre</option>
+                    {genres.map((genre) => (
+                    <option key={genre.id} value={genre.id}>{genre.name}</option>
+                    ))}
+                </select>
+                <button 
+                    type="button" 
+                    onClick={() => setShowNewGenre(!showNewGenre)}
+                    className={`px-2 py-2 min-w-35 rounded-md ${
+                        showNewGenre 
+                          ? 'bg-blue-600 text-white' 
+                          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                      }`}>
+                        + New Genre
+                    </button>
+              </div>
             </div>
           </div>
+
+          { showNewGenre &&
+          <div className="mb-8">
+              <label htmlFor="newGenre" className="block text-gray-600 mb-2">New Genre</label>
+              <input
+                type="text"
+                id="newGenre"
+                value={newGenre}
+                onChange={(e) => setNewGenre(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+          </div>
+          }
           
           {/* Questions Section */}
           <div>
@@ -167,7 +215,7 @@ export default function Create() {
                   <input
                     type="text"
                     value={question.title}
-                    onChange={() => updateQuestionTitle(qIndex)}
+                    onChange={(e) => updateQuestionTitle(qIndex, e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="Enter your question"
                     required

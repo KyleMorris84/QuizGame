@@ -24,6 +24,11 @@ namespace ReactApp1.Server.Controllers
         {
             if (quizData.Genre.Id == null)
             {
+                if (quizData.Genre.Name == null)
+                {
+                    return BadRequest("New genre is missing a name");
+                }
+
                 var genre = _genreRepository.AddGenre(
                     new Genre { Name = quizData.Genre.Name }
                 );
