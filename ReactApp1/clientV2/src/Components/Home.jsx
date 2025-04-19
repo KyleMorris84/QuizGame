@@ -10,7 +10,7 @@ export default function Home({ setCurrentPage }) {
                 <p className="text-gray-500 mb-10 font-light">Test your knowledge or create your own quiz</p>
                 
                 <div className="flex flex-col space-y-5">
-                    <button className="w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition duration-300 hover:-translate-y-1">
+                    <button onClick={() => setCurrentPage("select")} className="w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition duration-300 hover:-translate-y-1">
                         Play a Quiz
                     </button>
                     <button onClick={() => setCurrentPage("create")} className="w-full py-4 px-6 bg-teal-600 hover:bg-teal-700 text-white font-medium rounded-lg shadow-md transition duration-300 hover:-translate-y-1">

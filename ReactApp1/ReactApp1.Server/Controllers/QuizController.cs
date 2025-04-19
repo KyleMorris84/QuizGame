@@ -18,13 +18,9 @@ namespace ReactApp1.Server.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Quiz>> GetQuizzesByGenre(int? genreId)
+        public ActionResult<IEnumerable<Quiz>> GetQuizzesByGenre(int genreId)
         {
-            if (genreId == null)
-            {
-                return Ok(_quizRepository.Quizzes);
-            }
-            return Ok(_quizRepository.GetQuizzesByGenreId((int)genreId));
+            return Ok(_quizRepository.GetQuizzesByGenreId(genreId));
         }
     }
 }
