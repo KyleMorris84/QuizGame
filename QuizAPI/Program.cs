@@ -11,7 +11,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("https://quiz-game-liard-delta.vercel.app", "http://localhost:5174")
+                          policy.WithOrigins(
+                              "https://quiz-game-liard-delta.vercel.app",
+                              "http://localhost:5173",
+                              "http://localhost:5174"
+                          )
                             .AllowAnyHeader();
                       });
 });
@@ -28,8 +32,6 @@ builder.Services.AddDbContext<QuizDbContext>(options =>
     options.UseSqlite(connectionString));
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IQuizRepository, QuizRepository>();
 builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
@@ -39,13 +41,6 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
 
 app.UseCors(MyAllowSpecificOrigins);
@@ -53,7 +48,5 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapFallbackToFile("/index.html");
 
 app.Run();
