@@ -22,6 +22,4 @@ List of tools used
   - ASP.NET Core for the API Functionality
   - EF Core as an ORM for the DB
   - Swagger to test the API through a UI
-- Postman to test the API over the network
-- SQLite3 as a DB
-- DBeaver for creating and viewing the db
+- SQLite3 for the DB
